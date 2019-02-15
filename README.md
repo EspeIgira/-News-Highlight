@@ -4,7 +4,7 @@ Creating an Application / News-Highlight with users.
  
 ## Description
   
-  {News Highlight is an application which displays articles of news and list them.}, {Created 15th December 2018}
+{News Highlight is an application which displays articles of news and list them. Able to help users to view all lists from news articles from various sources}, {Created 15th December 2018}
 
 ## Setup/Installation Requirements
   
