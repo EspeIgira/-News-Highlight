@@ -1,5 +1,6 @@
 # -News-Highlight
 
+Creating an Application / News-Highlight with users.
  
 ## Description
   
