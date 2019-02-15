@@ -4,21 +4,29 @@ Creating an Application / News-Highlight with users.
  
 ## Description
   
-{News Highlight is an application which displays articles of news and list them. Able to help users to view all lists from news articles from various sources}, {Created 15th December 2018}
+{News Highlight is an application which displays articles of news and list them. Able to help users to view all lists from news articles from various sources}, {Created 15th December 2019}
+
+## Specification
+
+<!-- |  Input   |      Output           | Behaviour                          |
+|----------|:---------------------:|-----------------------------------:|
+|----------|:---------------------:|-----------------------------------:| -->
+
 
 ## Setup/Installation Requirements
   
-  Browser and text editor.
+- Install python 3.6
+- Terminal / Run /.py
 
 ## Technologies Used
-  
- . HTML Language 
 
- . JavaScript * . JQuery
+ - HTML Language
 
- . Bootstrap 
+ - Python 3.6
+
+ - Bootstrap 
   
- . CSS Stylesheet
+ - CSS Stylesheet
 
 ## Contact information
 
