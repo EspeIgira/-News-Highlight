@@ -11,7 +11,7 @@ api_key = app.config['ARTICLE_API_KEY']
 
 
 # Getting the article base url
-base_url = app.config["ARTICLE_API_BASE_URL"]
+base_url = app.config["SOURCE_API_BASE_URL"]
 
 
 
@@ -29,8 +29,8 @@ def get_source(category):
 
         source_results = None
 
-        if get_source_response['results']:
-            source_results_list = get_source_response['results']
+        if get_source_response['sources']:
+            source_results_list = get_source_response['sources']
             source_results = process_results(source_results_list)
 
 
@@ -49,9 +49,10 @@ def process_results(source_list):
         description = source_item.get('description')
         url = source_item.get('url')
         category= source_item.get('category')
+        country= source_item.get('country')
         language = source_item.get('language')
 
-        if poster:
+        if id:
             source_object = Source(id,name,description,url,category,language,country)
             source_results.append(source_object)
 

@@ -12,7 +12,11 @@ def index():
     '''
     # Getting general source
     general_source = get_source('general')
-    print(general_source)
+    upcoming_source = get_source('upcoming')
+    now_showing_source = get_source('now_playing')
+    #print(general_source)
     message = 'News Highlight'
-    title = 'Home// Our News Info' 
-    return render_template('index.html',message = message,title = title,general = general_source)
+    title = 'Our News Info' 
+    return render_template('index.html',message = message,title = title,general = general_source,upcoming = upcoming_source,now_showing = now_showing_source)
+
+    

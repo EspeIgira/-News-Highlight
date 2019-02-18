@@ -1,3 +1,5 @@
+{% import 'macros.html' as macro%}
+
 <h3> {{ title }} </h3>
 <h1> {{ message }} </h1>
 
@@ -13,12 +15,23 @@
         {% endif %}
     </head>
     <body>
-        <!-- source section  -->
-        <h3> General Source</h3>
-        <ul>
-            {% for general_source in general %}
-                <li>{{ general_source.id}}</li>
-            {% endfor %}
-        </ul>
+       <!-- general source -->
+  <h3> general source</h3>
+  <ul>
+      {{ macro.displaySourceList(popular)}}
+  </ul>
+  <!-- Upcoming source  -->
+  <h3> Upcoming source </h3>
+  <ul>
+      {{ macro.displaySourceList(upcoming)}}
+  </ul>
+  <!-- Now showing Source -->
+  <h3>Now Showing</h3>
+  <ul>
+      {{ macro.displaySourceList(now_showing)}}
+  </ul>
     </body>
 </html>
+
+
+  
