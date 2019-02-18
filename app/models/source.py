@@ -12,3 +12,5 @@ class Source:
         self.url = url
         self.category = category
         self.country = country
+
+        
