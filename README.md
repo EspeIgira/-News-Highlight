@@ -1,21 +1,16 @@
 # -News-Highlight
 
-Creating an Application / News-Highlight with users.
+Creating an Application / News-Highlight with News articles.
  
 ## Description
   
 {News Highlight is an application which displays articles of news and list them. Able to help users to view all lists from news articles from various sources}, {Created 15th December 2019}
 
-## Specification
-
-<!-- |  Input   |      Output           | Behaviour                          |
-|----------|:---------------------:|-----------------------------------:|
-|----------|:---------------------:|-----------------------------------:| -->
-
 
 ## Setup/Installation Requirements
   
 - Install python 3.6
+
 - Terminal / Run /.py
 
 ## Technologies Used
@@ -28,7 +23,15 @@ Creating an Application / News-Highlight with users.
   
  - CSS Stylesheet
 
-## Contact information
+ ## Specification
+
+<!-- 
+|  Input   |      Output           | Behaviour                          |
+|----------|:---------------------:|-----------------------------------:|
+|----------|:---------------------:|-----------------------------------:| 
+-->
+
+## Contact Information
 
   Telephone number (+250)788556167 or Email espeigira@gamil.com
  
