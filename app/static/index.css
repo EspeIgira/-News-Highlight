@@ -1,4 +1,8 @@
-
+body{
+    
+    background-color:lightgray;
+    /* background-image: url('https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwj7qeDp_sfgAhWKMewKHdhlCvwQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.videvo.net%2Fvideo%2Fabstract-news-background%2F1668%2F&psig=AOvVaw1KneLVd1n3pJFk5-lxmxMy&ust=1550672356481840') */
+}
 h1{
     text-align: center;
 }
@@ -63,14 +67,35 @@ h3{
 .collapse{
     font-family: 'Julius Sans One';
 }
-.container{
+
+hr{
+    border-width: 2px;
+}
+/* .container{
+    display: contents;
+    display:block; 
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:100px; */
+    /* text-align: center; */
+/* } */
+img{
+    display:flex;
+    padding:5px 10px;
+}
+.col-md-6{
+    display: contents;
     display:block; 
     padding-left:100px;
     padding-right:100px;
     padding-top:100px;
     padding-bottom:100px;
-    text-align: center;
 }
-hr{
-    border-width: 2px;
+#jumbtron{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:20px;
 }
