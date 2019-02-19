@@ -71,35 +71,6 @@ h3{
 hr{
     border-width: 2px;
 }
-/* .container{
-    display: contents;
-    display:block; 
-    padding-left:100px;
-    padding-right:100px;
-    padding-top:100px;
-    padding-bottom:100px; 
-    background-color:lightgray;
-    /* text-align: center; */
- /* }  */
-/* img{
-    display:flex;
-    padding:5px 10px;
-}
-.col-md-6{
-    display: contents;
-    display:block; 
-    padding-left:100px;
-    padding-right:100px;
-    padding-top:100px;
-    padding-bottom:100px;
-}
-#jumbtron{
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:20px;
-    padding-bottom:20px;
-    margin:20px;
-} */
-.bodyarticle{
+.row{
     background-color:lightgray;
 }
