@@ -1,3 +1,4 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
 <h3> {{ title }} </h3>
@@ -13,23 +14,34 @@
         {% else %}
         <title> Our News Info </title>
         {% endif %}
+        <!-- Styles block -->
+
+        {% block styles%}
+        {{ super() }}
+        <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+        {% endblock %}
     </head>
     <body>
-       <!-- general source -->
-  <h3> general source</h3>
-  <ul>
-      {{ macro.displaySourceList(popular)}}
-  </ul>
-  <!-- Upcoming source  -->
-  <h3> Upcoming source </h3>
-  <ul>
-      {{ macro.displaySourceList(upcoming)}}
-  </ul>
-  <!-- Now showing Source -->
-  <h3>Now Showing</h3>
-  <ul>
-      {{ macro.displaySourceList(now_showing)}}
-  </ul>
+        {% block content %}
+ 
+        <!-- general source -->
+        <h3> General source</h3>
+        <ul>
+            {{ macro.displaySourceList(general)}}
+        </ul>
+        <!-- health source  -->
+        <h3> Health source </h3>
+        <ul>
+            {{ macro.displaySourceList(health)}}
+        </ul>
+        <!-- business Source -->
+        <h3>Business source</h3>
+        <ul>
+            {{ macro.displaySourceList(business)}}
+        </ul>
+
+        {% endblock%}
+   
     </body>
 </html>
 

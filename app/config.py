@@ -3,7 +3,8 @@ class Config:
     General configuration parent class
     '''
     SOURCE_API_BASE_URL ='https://newsapi.org/v2/sources?category={}&apiKey={}'
-    ARTICLE_API_BASE_URL ='https://newsapi.org/v2/everything?&q=bitcoin&apiKey={}'
+    ARTICLE_API_BASE_URL ='https://newsapi.org/v2/everything?sources={}&apiKey={}'
+
    
 
 
@@ -26,4 +27,5 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+    
     

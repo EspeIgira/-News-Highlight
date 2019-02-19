@@ -12,6 +12,7 @@ api_key = app.config['ARTICLE_API_KEY']
 
 # Getting the article base url
 base_url = app.config["SOURCE_API_BASE_URL"]
+base_url1=app.config['ARTICLE_API_BASE_URL']
 
 
 
@@ -27,22 +28,22 @@ def get_source(category):
         get_source_data = url.read()
         get_source_response = json.loads(get_source_data)
 
-        source_results = None
+        source_sources = None
 
         if get_source_response['sources']:
-            source_results_list = get_source_response['sources']
-            source_results = process_results(source_results_list)
+            source_sources_list = get_source_response['sources']
+            source_sources = process_sources(source_sources_list)
 
 
-    return source_results
+    return source_sources
 
 
-#process the results and create source objects
+#process the sources and create source objects
 
     
-def process_results(source_list):
+def process_sources(source_list):
     
-    source_results = []
+    source_sources = []
     for source_item in source_list:
         id = source_item.get('id')
         name = source_item.get('name')
@@ -54,51 +55,53 @@ def process_results(source_list):
 
         if id:
             source_object = Source(id,name,description,url,category,language,country)
-            source_results.append(source_object)
+            source_sources.append(source_object)
 
-    return source_results 
-
-
-
-#get the API key and the article URL
-# def get_article(category):
-#     '''
-#     Function that gets the json response to our url request
-#     '''
-#     get_article_url = base_url.format(category,api_key)
-
-#     with urllib.request.urlopen(get_article_url) as url:
-#         get_article_data = url.read()
-#         get_article_response = json.loads(get_article_data)
-
-#         article_results = Nonearticle
-
-#         if get_article_response['results']:
-#             article_results_list = get_article_response['results']
-#             article_results = process_results(article_results_list)
+    return source_sources 
 
 
-#     return article_result
+
+# get the API key and the article URL
+def get_article(category):
+    '''
+    Function that gets the json response to our url request
+    '''
+    get_article_url = base_url1.format(category,api_key)
+
+    with urllib.request.urlopen(get_article_url) as url:
+        get_article_data = url.read()
+        get_article_response = json.loads(get_article_data)
+
+        article_results = None
+
+        if get_article_response['articles']:
+            article_results_list = get_article_response['articles']
+            article_results = process_results(article_results_list)
 
 
-#process the results and create article objects
+    return article_results
 
-# def process_results(article_list):
+
+# process the results and create article objects
+
+def process_results(article_list):
     
-#     article_results = []
-#     for article_item in article_list:
-#         author = article_item.get('author')
-#         title = article_item.get('title')
-#         description = article_item.get('description')
-#         url = article_item.get('url')
-#         urlToImage = article_item.get('urlToImage')
-#         publishedAt = article_item.get('publishedAt')
+    article_results = []
+    for article_item in article_list:
+        author = article_item.get('author')
+        title = article_item.get('title')
+        description = article_item.get('description')
+        url = article_item.get('url')
+        urlToImage = article_item.get('urlToImage')
+        publishedAt = article_item.get('publishedAt')
 
-#         if poster:
-#             article_object = Article(author,title,description,url,urlToImage,publishedAt)
-#             article_results.append(article_object)
+        if id:
+            article_object = Article(author,title,description,url,urlToImage,publishedAt)
+            article_results.append(article_object)
 
-#     return article_results
+    return article_results
+
+    
 
 
  
