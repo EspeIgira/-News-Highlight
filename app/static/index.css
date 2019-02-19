@@ -1,6 +1,4 @@
-/* .listarticles{
-    display:block;
-} */
+
 h1{
     text-align: center;
 }
@@ -28,28 +26,35 @@ h3{
     text-align: center;  
 }
 
-.general{
+.listarticles{
+    display: contents;
     display:block;
-    padding-left:100px;
+    text-align: center;
+}
+
+.general{
+    
+    display:inline-block;
+    /* padding-left:100px;
     padding-right:100px;
     padding-top:100px;
-    padding-bottom:100px;
+    padding-bottom:100px; */
     text-align: center;
 }
 .health{
     display:block;
-    padding-left:100px;
+    /* padding-left:100px; 
     padding-right:100px;
     padding-top:100px;
-    padding-bottom:100px;
+    padding-bottom:100px; */
     text-align: center;
 }
 .business{
     display:block;
-    padding-left:100px;
+    /* padding-left:100px;
     padding-right:100px;
     padding-top:100px;
-    padding-bottom:100px;
+    padding-bottom:100px; */
     text-align: center;
 }
 .navbar-header{
@@ -58,4 +63,14 @@ h3{
 .collapse{
     font-family: 'Julius Sans One';
 }
-
+.container{
+    display:block; 
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align: center;
+}
+hr{
+    border-width: 2px;
+}
