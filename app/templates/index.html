@@ -22,15 +22,16 @@
         <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
         {% endblock %}
     </head>
-    <body class="listarticles">
+    <body>
 
         {% block content %}
         <h1 class="title"> {{ message }} </h1>
+        <div class="listarticles">
         <div class="general">
             <!-- general source -->
         <h3> General source</h3>
         <ul>
-            {{ macro.displaySourceList(general)}}
+            <li>{{ macro.displaySourceList(general)}}</li>
             
         </ul>
         </div>
@@ -51,9 +52,11 @@
             
         </ul>
         </div>
+        listarticles
         {% endblock%}
    
     </body>
 </html>
+
 
   

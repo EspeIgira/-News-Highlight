@@ -13,5 +13,6 @@ class Source:
         self.urlToImage = urlToImage
         self.category = category
         self.country = country
+        
 
         

@@ -1,3 +1,6 @@
+/* .listarticles{
+    display:block;
+} */
 h1{
     text-align: center;
 }
@@ -15,13 +18,18 @@ h1{
 } */
 .-card{
     border:1px solid black;
-    /* margin-left:20px;
+    margin-left:10px;
     margin-right: 10px;
-    margin-bottom:5px;
-    margin-top: 2px; */
+    margin-bottom:10px;
+    margin-top: 10px; 
 
 }
+h3{
+    text-align: center;  
+}
+
 .general{
+    display:block;
     padding-left:100px;
     padding-right:100px;
     padding-top:100px;
@@ -29,11 +37,19 @@ h1{
     text-align: center;
 }
 .health{
-    padding:100px;
+    display:block;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:100px;
     text-align: center;
 }
 .business{
-    padding:100px;
+    display:block;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:100px;
     text-align: center;
 }
 .navbar-header{
