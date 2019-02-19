@@ -22,10 +22,19 @@ h1{
 
 }
 .general{
-    margin-left:20px;
-    margin-right: 10px;
-    margin-bottom:5px;
-    margin-top: 2px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align: center;
+}
+.health{
+    padding:100px;
+    text-align: center;
+}
+.business{
+    padding:100px;
+    text-align: center;
 }
 .navbar-header{
     font-family: 'Julius Sans One';
