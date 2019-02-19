@@ -19,14 +19,14 @@
         <div class="container">
             <div class="row">
                 {% for source in source_list %}
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 idPath" style="background: url({{source.id}}) no-repeat center center">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 id0Path" style="background: url({{article.title}}) no-repeat center center">
                     <a href={{article.url}} target="_blank">
-                                <img src={{article.urlToImage}} alt="IMAGE LOADING...">
+                    <img src={{article.urlToImage}} alt="IMAGE LOADING...">
                     </a>
 
                 </div>
 
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 source-details">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 article-details">
                     <h3>{{ article.author }}</h3>
                     <p> {{ article.title }}</p>
                     <p>Posted on {{article.publishedAt}} </p>
@@ -37,7 +37,7 @@
 
                 </div>
             </div>
-
+               {% endfor %}
         </div>
         {% endblock %}
 
