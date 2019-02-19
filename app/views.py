@@ -19,19 +19,19 @@ def index():
     title = 'Our News Info' 
     return render_template('index.html',message = message,title = title,general = general_source,health = health_source ,business = business_source)
 
-@app.route('/article/<source_id>')
-def article(source_id):
+@app.route('/article/<id>')
+def article(id):
 
     '''
     View root page function that returns the index page and its data
     '''
     # Getting general source
-    general_source = get_article(source_id)
+    general_source = get_article(id)
     # health_source = get_article('health')
     # business_source = get_article('business')
     #print(general_source)
     message = 'News Highlight'
     title = 'Our News Info' 
-    return render_template('articles.html',message = message,title = title,source_id = general_source)
+    return render_template('articles.html',message = message,title = title, general_source = general_source)
 
 

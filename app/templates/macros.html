@@ -2,8 +2,8 @@
 
     {% for source in source_list %}
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 -card">
-      <img src="{{ source.id }}" alt="{{ source.id }} id" class="img-responsive">
-      <li><a href="/article/source.id ">
+      <!-- <img src="{{source.id}}" alt="{{source.id}} id" class="img-responsive"> -->
+      <li><a href="/article/{{source.id }} ">
         {{ source.id|truncate(10) }}</a>
       </li> 
     </div>

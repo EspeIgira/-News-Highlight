@@ -49,12 +49,13 @@ def process_sources(source_list):
         name = source_item.get('name')
         description = source_item.get('description')
         url = source_item.get('url')
+        urlToImage = source_item.get('urlToImage')
         category= source_item.get('category')
         country= source_item.get('country')
         language = source_item.get('language')
 
         if id:
-            source_object = Source(id,name,description,url,category,language,country)
+            source_object = Source(id,name,description,url,urlToImage,category,language,country)
             source_sources.append(source_object)
 
     return source_sources 

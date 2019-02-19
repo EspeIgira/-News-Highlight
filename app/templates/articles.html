@@ -18,21 +18,21 @@
         {% block content %}
         <div class="container">
             <div class="row">
-                {% for source in source_list %}
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 id0Path" style="background: url({{article.title}}) no-repeat center center">
-                    <a href={{article.url}} target="_blank">
-                    <img src={{article.urlToImage}} alt="IMAGE LOADING...">
+                {% for source in general_source %}
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 id0Path" style="background: url({{source.id}}) no-repeat center center">
+                    <a href={{source.url}} target="_blank">
+                    <img src={{source.urlToImage}} alt="IMAGE LOADING..." height="200">
                     </a>
 
                 </div>
 
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 article-details">
-                    <h3>{{ article.author }}</h3>
-                    <p> {{ article.title }}</p>
-                    <p>Posted on {{article.publishedAt}} </p>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 source-details">
+                    <h3>{{ source.name }}</h3>
+                    <p> {{ source.description }}</p>
+                    <p>Posted on {{source.publishedAt}} </p>
 
-                    <p> {{article.description}}...
-                       <a href={{article.url}} target="_blank">Read More</a>
+                    <p> {{source.category}}...
+                       <a href={{source.url}} target="_blank">Read More</a>
                     </p>
 
                 </div>
