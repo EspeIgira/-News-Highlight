@@ -33,5 +33,5 @@ def article(source_id):
     message = 'News Highlight'
     title = 'Our News Info' 
     return render_template('articles.html',message = message,title = title,source_id = general_source)
-     
-     
+
+

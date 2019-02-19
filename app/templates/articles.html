@@ -1,3 +1,4 @@
+{% extends 'base.html'%}
 <h1> News Highlight {{ id }} </h1>
 
 <!DOCTYPE html>
@@ -9,13 +10,36 @@
         {% else %}
         <title> Our News Info </title>
         {% endif %}
-        <!-- Styles block -->
+        
 
     
     </head>
     <body>
-        {% for source in source_list %}
-            
-        {% endfor %}
+        {% block content %}
+        <div class="container">
+            <div class="row">
+                {% for source in source_list %}
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 idPath" style="background: url({{source.id}}) no-repeat center center">
+                    <a href={{article.url}} target="_blank">
+                                <img src={{article.urlToImage}} alt="IMAGE LOADING...">
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 source-details">
+                    <h3>{{ article.author }}</h3>
+                    <p> {{ article.title }}</p>
+                    <p>Posted on {{article.publishedAt}} </p>
+
+                    <p> {{article.description}}...
+                       <a href={{article.url}} target="_blank">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        {% endblock %}
+
     </body>
 </html>
