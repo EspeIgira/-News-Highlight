@@ -2,7 +2,8 @@
 {% import 'macros.html' as macro%}
 
 <h3> {{ title }} </h3>
-<h1> {{ message }} </h1>
+
+
 
 
 <!DOCTYPE html>
@@ -21,14 +22,18 @@
         <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
         {% endblock %}
     </head>
-    <body>
+    <body class="listarticles">
+
         {% block content %}
- 
-        <!-- general source -->
+        <h1 class="title"> {{ message }} </h1>
+        <div class="general">
+            <!-- general source -->
         <h3> General source</h3>
         <ul>
             {{ macro.displaySourceList(general)}}
         </ul>
+        </div>
+        
         <!-- health source  -->
         <h3> Health source </h3>
         <ul>

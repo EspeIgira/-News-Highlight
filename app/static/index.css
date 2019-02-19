@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+.title{
+    font-family: 'Julius Sans One';
+    text-align: center;
+    background-color:#222;
+    color:white;
+    margin-top:-21px;
+    background-position: 200px;
+
+}
+/* .border1{
+    padding:200px;
+} */
+.-card{
+    border:1px solid black;
+    /* margin-left:20px;
+    margin-right: 10px;
+    margin-bottom:5px;
+    margin-top: 2px; */
+
+}
+.general{
+    margin-left:20px;
+    margin-right: 10px;
+    margin-bottom:5px;
+    margin-top: 2px;
+}
+.navbar-header{
+    font-family: 'Julius Sans One';
+}
+.collapse{
+    font-family: 'Julius Sans One';
+}
+
